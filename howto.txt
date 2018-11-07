@@ -172,6 +172,9 @@ ref: https://github.com/tonyriverms/sphinx_live_preview
 reStructuredText Primer
 http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#
 
+Quick reStructuredText
+http://docutils.sourceforge.net/docs/user/rst/quickref.html#tables
+
 Reference:
 http://sphinx.local.orbitalinsight.info/fracking/latest/index.html
 
