@@ -1,3 +1,7 @@
+------------------------------------------------------------------------
+		1. Install sphinx and setup folder structure
+------------------------------------------------------------------------
+
 [14:17:03 kewei@MacBook-Pro-4 ~/orbital/base/aether_work/sphinx_trial] $ pip2.7 install sphinx
 Collecting sphinx
   Downloading https://files.pythonhosted.org/packages/35/e0/e9e83b244eaa382ba21896dda6172617e47aff0be225eb72782cca105d3c/Sphinx-1.8.1-py2.py3-none-any.whl (3.1MB)
@@ -108,8 +112,6 @@ source files. Use the Makefile to build the docs, like so:
 where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
 
 
-
-
 [14:33:53 kewei@MacBook-Pro-4 ~/orbital/base/aether_work/sphinx_trial] $ make html
 Running Sphinx v1.8.1
 building [mo]: targets for 0 po files that are out of date
@@ -130,4 +132,56 @@ dumping object inventory... done
 build succeeded.
 
 The HTML pages are in build/html.
+
+------------------------------------------------------------------------
+		2. Copy the folder structure into git repo (without ./build)
+------------------------------------------------------------------------
+
+$ git push origin master
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 171.96 KiB | 10.75 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/kewei2/sphinx_chameleon_doc/pull/new/master
+remote:
+To github.com:kewei2/sphinx_chameleon_doc.git
+ * [new branch]      master -> master
+
+------------------------------------------------------------------------
+		3. Sphinx Live Preview
+------------------------------------------------------------------------
+
+ref: https://github.com/tonyriverms/sphinx_live_preview
+
+3.1 Install selenium Google Chrome Driver
+	3.1.1 pip2.7 install -U selenium
+	3.1.2 Go to https://www.seleniumhq.org/download/ to download "chromedriver",
+	      put it under the root of the git repo folder.
+	
+3.2 Launch live preview in Chrome	
+	python2.7 rst_preview.py (use the one in the git repo, the original version does not work)
+
+
+------------------------------------------------------------------------
+		4. Enjoy editing .rst files under ./source folder
+------------------------------------------------------------------------
+
+reStructuredText Primer
+http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#
+
+Reference:
+http://sphinx.local.orbitalinsight.info/fracking/latest/index.html
+
+
+------------------------------------------------------------------------
+		5. Other Resources
+------------------------------------------------------------------------
+
+- Simple online editor for reStructuredText on Flask: https://github.com/anru/rsted
+
+
+
 
