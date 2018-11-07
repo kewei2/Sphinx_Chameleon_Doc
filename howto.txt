@@ -1,0 +1,133 @@
+[14:17:03 kewei@MacBook-Pro-4 ~/orbital/base/aether_work/sphinx_trial] $ pip2.7 install sphinx
+Collecting sphinx
+  Downloading https://files.pythonhosted.org/packages/35/e0/e9e83b244eaa382ba21896dda6172617e47aff0be225eb72782cca105d3c/Sphinx-1.8.1-py2.py3-none-any.whl (3.1MB)
+    100% |████████████████████████████████| 3.1MB 4.8MB/s
+Collecting alabaster<0.8,>=0.7 (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/10/ad/00b090d23a222943eb0eda509720a404f531a439e803f6538f35136cae9e/alabaster-0.7.12-py2.py3-none-any.whl
+Requirement already satisfied: Jinja2>=2.3 in /usr/local/lib/python2.7/site-packages (from sphinx) (2.10)
+Collecting snowballstemmer>=1.1 (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/d4/6c/8a935e2c7b54a37714656d753e4187ee0631988184ed50c0cf6476858566/snowballstemmer-1.2.1-py2.py3-none-any.whl (64kB)
+    100% |████████████████████████████████| 71kB 12.5MB/s
+Collecting packaging (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/89/d1/92e6df2e503a69df9faab187c684585f0136662c12bb1f36901d426f3fab/packaging-18.0-py2.py3-none-any.whl
+Collecting babel!=2.0,>=1.3 (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/b8/ad/c6f60602d3ee3d92fbed87675b6fb6a6f9a38c223343ababdb44ba201f10/Babel-2.6.0-py2.py3-none-any.whl (8.1MB)
+    100% |████████████████████████████████| 8.1MB 3.9MB/s
+Collecting imagesize (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/fc/b6/aef66b4c52a6ad6ac18cf6ebc5731ed06d8c9ae4d3b2d9951f261150be67/imagesize-1.1.0-py2.py3-none-any.whl
+Requirement already satisfied: setuptools in /usr/local/lib/python2.7/site-packages (from sphinx) (39.1.0)
+Requirement already satisfied: Pygments>=2.0 in /usr/local/lib/python2.7/site-packages (from sphinx) (2.2.0)
+Collecting typing; python_version < "3.5" (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/cc/3e/29f92b7aeda5b078c86d14f550bf85cff809042e3429ace7af6193c3bc9f/typing-3.6.6-py2-none-any.whl
+Collecting docutils>=0.11 (from sphinx)
+  Using cached https://files.pythonhosted.org/packages/50/09/c53398e0005b11f7ffb27b7aa720c617aba53be4fb4f4f3f06b9b5c60f28/docutils-0.14-py2-none-any.whl
+Requirement already satisfied: requests>=2.0.0 in /usr/local/lib/python2.7/site-packages (from sphinx) (2.18.4)
+Requirement already satisfied: six>=1.5 in /usr/local/lib/python2.7/site-packages (from sphinx) (1.11.0)
+Collecting sphinxcontrib-websupport (from sphinx)
+  Downloading https://files.pythonhosted.org/packages/52/69/3c2fbdc3702358c5b34ee25e387b24838597ef099761fc9a42c166796e8f/sphinxcontrib_websupport-1.1.0-py2.py3-none-any.whl
+Requirement already satisfied: MarkupSafe>=0.23 in /usr/local/lib/python2.7/site-packages (from Jinja2>=2.3->sphinx) (1.0)
+Requirement already satisfied: pyparsing>=2.0.2 in /usr/local/lib/python2.7/site-packages (from packaging->sphinx) (2.2.0)
+Requirement already satisfied: pytz>=0a in /usr/local/lib/python2.7/site-packages (from babel!=2.0,>=1.3->sphinx) (2018.4)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python2.7/site-packages (from requests>=2.0.0->sphinx) (2018.4.16)
+Requirement already satisfied: chardet<3.1.0,>=3.0.2 in /usr/local/lib/python2.7/site-packages (from requests>=2.0.0->sphinx) (3.0.4)
+Requirement already satisfied: idna<2.7,>=2.5 in /usr/local/lib/python2.7/site-packages (from requests>=2.0.0->sphinx) (2.6)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in /usr/local/lib/python2.7/site-packages (from requests>=2.0.0->sphinx) (1.22)
+Installing collected packages: alabaster, snowballstemmer, packaging, babel, imagesize, typing, docutils, sphinxcontrib-websupport, sphinx
+Successfully installed alabaster-0.7.12 babel-2.6.0 docutils-0.14 imagesize-1.1.0 packaging-18.0 snowballstemmer-1.2.1 sphinx-1.8.1 sphinxcontrib-websupport-1.1.0 typing-3.6.6
+ 
+[14:17:19 kewei@MacBook-Pro-4 ~/orbital/base/aether_work/sphinx_trial] $ ls
+howto.txt
+[14:18:13 kewei@MacBook-Pro-4 ~/orbital/base/aether_work/sphinx_trial] $ sphinx-quickstart
+Welcome to the Sphinx 1.8.1 quickstart utility.
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+Selected root path: .
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory "_build" within the root path, or you separate
+"source" and "build" directories within the root path.
+> Separate source and build directories (y/n) [n]: y
+
+Inside the root directory, two more directories will be created; "_templates"
+for custom HTML templates and "_static" for custom stylesheets and other static
+files. You can enter another prefix (such as ".") to replace the underscore.
+> Name prefix for templates and static dir [_]:
+
+The project name will occur in several places in the built documentation.
+> Project name: ChameleonGuide
+> Author name(s): Alex, Kewei
+> Project release []:
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+http://sphinx-doc.org/config.html#confval-language.
+> Project language [en]:
+
+The file name suffix for source files. Commonly, this is either ".txt"
+or ".rst".  Only files with this suffix are considered documents.
+> Source file suffix [.rst]:
+
+One document is special in that it is considered the top node of the
+"contents tree", that is, it is the root of the hierarchical structure
+of the documents. Normally, this is "index", but if your "index"
+document is a custom template, you can also set this to another filename.
+> Name of your master document (without suffix) [index]:
+Indicate which of the following Sphinx extensions should be enabled:
+> autodoc: automatically insert docstrings from modules (y/n) [n]:
+> doctest: automatically test code snippets in doctest blocks (y/n) [n]:
+> intersphinx: link between Sphinx documentation of different projects (y/n) [n]:
+> todo: write "todo" entries that can be shown or hidden on build (y/n) [n]:
+> coverage: checks for documentation coverage (y/n) [n]:
+> imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
+> mathjax: include math, rendered in the browser by MathJax (y/n) [n]:
+> ifconfig: conditional inclusion of content based on config values (y/n) [n]:
+> viewcode: include links to the source code of documented Python objects (y/n) [n]:
+> githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:
+
+A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g. `make html' instead of invoking sphinx-build
+directly.
+> Create Makefile? (y/n) [y]:
+> Create Windows command file? (y/n) [y]:
+
+Creating file ./source/conf.py.
+Creating file ./source/index.rst.
+Creating file ./Makefile.
+Creating file ./make.bat.
+
+Finished: An initial directory structure has been created.
+
+You should now populate your master file ./source/index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+
+
+
+
+[14:33:53 kewei@MacBook-Pro-4 ~/orbital/base/aether_work/sphinx_trial] $ make html
+Running Sphinx v1.8.1
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 4 source files that are out of date
+updating environment: 4 added, 0 changed, 0 removed
+reading sources... [100%] tutorial
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [100%] tutorial
+generating indices... genindex
+writing additional pages... search
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en) ... done
+dumping object inventory... done
+build succeeded.
+
+The HTML pages are in build/html.
+
