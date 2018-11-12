@@ -180,7 +180,16 @@ http://sphinx.local.orbitalinsight.info/fracking/latest/index.html
 
 
 ------------------------------------------------------------------------
-		5. Other Resources
+		5. Generate pdf
+------------------------------------------------------------------------
+
+install MacTeX: http://www.tug.org/mactex/;
+Open Tex Live Utility.app, search for “latexmk”, double-check that x86_64-darwin is installed;
+launch a new terminal window, go to repo root folder;
+make latexpdf; the .pdf will be under build/latex/ subfolder.
+
+------------------------------------------------------------------------
+		6. Other Resources
 ------------------------------------------------------------------------
 
 - Simple online editor for reStructuredText on Flask: https://github.com/anru/rsted
